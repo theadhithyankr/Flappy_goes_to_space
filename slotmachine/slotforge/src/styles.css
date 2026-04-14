@@ -1,0 +1,28 @@
+:root {
+  --bg-start: #05080f;
+  --bg-end: #1f1214;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 20% 10%, #2d1a1e 0%, var(--bg-start) 55%, var(--bg-end) 100%);
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+canvas {
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45), 0 0 0 2px rgba(233, 176, 92, 0.3);
+}
